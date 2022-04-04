@@ -1,0 +1,19 @@
+{
+  "name": "game-maker",
+  "version": "1.0.0",
+  "description": "game maker",
+  "main": "index.js",
+  "repository": "https://github.com/zero1988/game-maker.git",
+  "author": "PUSHSOFT\\wangwei <wangwei@aio5.com>",
+  "scripts": {
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.71.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
