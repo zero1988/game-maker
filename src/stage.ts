@@ -20,11 +20,7 @@ export default class Stage {
     }
 
     private constructor(options?: StageOptions) {
-        // Object.assign(this.options, options)
-        this.options = {
-            ...this.options,
-            ...options
-        }
+        Object.assign(this.options, options)
     }
 
     static getInstance(options?: StageOptions): Stage {

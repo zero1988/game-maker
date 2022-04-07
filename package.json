@@ -6,7 +6,8 @@
   "repository": "https://github.com/zero1988/game-maker.git",
   "author": "PUSHSOFT\\wangwei <wangwei@aio5.com>",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --config webpack.config.dev.js --open"
   },
   "license": "MIT",
   "dependencies": {},
@@ -14,6 +15,7 @@
     "ts-loader": "^9.2.8",
     "typescript": "^4.6.3",
     "webpack": "^5.71.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
   }
 }

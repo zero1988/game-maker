@@ -1,8 +1,7 @@
 const path = require('path')
-const { webpack } = require('webpack')
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.ts',
     module: {
         rules: [{
@@ -17,5 +16,10 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js']
+    },
+    devServer: {
+        static: {
+            directory: __dirname
+        }
     },
 }
