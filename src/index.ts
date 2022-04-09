@@ -1,9 +1,15 @@
+import { EllipseBrick } from './ellipse-brick'
+import { RectBrick } from './rect-brick'
 import Stage from './stage'
 
 const game = Stage.getInstance({
-    backgroundColor: 'green',
+    backgroundColor: 'red',
 })
-game.run()
+game.addBrick(new EllipseBrick({
+    backgroundColor: 'blue',
+    left: 200,
+}))
+game.addBrick(new RectBrick())
 
-console.log(game.width)
-console.log(game.height)
+
+game.run()
